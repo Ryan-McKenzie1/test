@@ -8,26 +8,21 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
     <style>
-        #container{
-            display: flex;
-            flex-wrap: wrap;
-/*            margin-right: auto;*/
-/*            float: ;*/
-/*align-content: center;*/
-        }
-        
-        #container > div{
-            background-color: aqua;
-            font-size: 20px;
-/*            margin-right: auto;*/
-            margin-top: 40px;
+        #grid{
+            background-color: green;
+            display: grid;
             padding: 20px;
-            width: 350px;
-            margin-left: 40px;
-
-/*            align-content: center;*/
+            grid-column-gap: 20px;
+            grid-row-gap: 30px;
+            grid-template-columns: 32% 32% 32%;
+        }
+        .grid-item{
+            background-color: white;
+            font-size: 30px;
+            padding: 20px;
+            text-align: center;
         }
 
     </style>
@@ -36,19 +31,19 @@
 
 <body>
 
-    <div id="container">
-        <div>1. flex boxes are cool, yet mysterious. </div>
-        <div>2. flex boxes are cool, yet mysterious. </div>
-        <div>3. flex boxes are cool, yet mysterious. </div>
-        <div>4. flex boxes are cool, yet mysterious. </div>
-        <div>5. flex boxes are cool, yet mysterious. </div>
-        <div>6. flex boxes are cool, yet mysterious. </div>
-        <div>7. flex boxes are cool, yet mysterious. </div>
-        <div>8. flex boxes are cool, yet mysterious. </div>
-        <div>9. flex boxes are cool, yet mysterious. </div>
-        <div>10. flex boxes are cool, yet mysterious. </div>
-        <div>11. flex boxes are cool, yet mysterious. </div>
-        <div>12. flex boxes are cool, yet mysterious. </div>
+    <div id="grid">
+        <div class="grid-item">Example of grid TextExample of grid TextExample of grid TextExample of grid TextExample of grid TextExample of grid TextExample of grid TextExample of grid TextExample of grid Text</div>
+        <div class="grid-item">Example of grid TextExample of grid TextExample of grid TextExample of grid TextExample of grid TextExample of grid TextExample of grid TextExample of grid TextExample of grid TextExample of grid TextExample of grid TextExample of grid TextExample of grid TextExample of grid TextExample of grid TextExample of grid TextExample of grid TextExample of grid TextExample of grid TextExample of grid TextExample of grid TextExample of grid Text</div>
+        <div class="grid-item">Example of grid TextExample of grid Text</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">Example of grid Text</div>
+        <div class="grid-item">10</div>
+        <div class="grid-item">11</div>
+        <div class="grid-item">12</div>
         
     </div>
 
